@@ -6,7 +6,7 @@
 
 ## [bubbleSort.php](./bubbleSort.php) 冒泡排序
 
-## insertSort.php 插入顺序
+## [insertSort.php](./insertSort.php) 插入顺序
 
 ## [quickSort.php](./quickSort.php) 快速排序
 
