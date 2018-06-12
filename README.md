@@ -2,7 +2,7 @@
 
 ## [arrayChunk.php](./arrayChunk.php) 平均拆分数组
 
-## binarySearch.php 二分查找法
+## [binarySearch.php](./binarySearch.php) 二分查找法
 
 ## [bubbleSort.php](./bubbleSort.php) 冒泡排序
 
