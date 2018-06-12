@@ -11,3 +11,5 @@
 ## [quickSort.php](./quickSort.php) 快速排序
 
 ## selectSort.php 选择排序
+
+## [sequentialSearch.php](./sequentialSearch.php) 顺序查找

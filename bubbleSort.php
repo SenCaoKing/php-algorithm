@@ -29,6 +29,21 @@ function bubbleSort($arr){
 }
 $sort=bubbleSort($arr);
 echo "<pre>";print_r($sort);
+/**
+ * Array (
+    [0] => 1
+    [1] => 21
+    [2] => 32
+    [3] => 36
+    [4] => 39
+    [5] => 43
+    [6] => 54
+    [7] => 62
+    [8] => 66
+    [9] => 76
+    [10] => 78
+)
+ */
 
 echo "<hr>";
 
@@ -60,6 +75,19 @@ function mysort($arr){
 
 $arr1 = array(8,1,2,6,5,7,3,4);
 echo "<pre>";print_r(mysort($arr1));
+/**
+ * Array
+(
+[0] => 1
+[1] => 2
+[2] => 3
+[3] => 4
+[4] => 5
+[5] => 6
+[6] => 7
+[7] => 8
+)
+ */
 
 // $arr1 = array(1,2,3,4,5,6,7,8);
 // echo "<pre>";print_r(mysort($arr2));
@@ -89,6 +117,28 @@ for( $outer = 0; $outer < $length && $swap; $outer++ ){
     }
 }
 print_r($arr2);
+
+/**
+ * outer : 0
+outer : 1
+outer : 2
+outer : 3
+outer : 4
+outer : 5
+outer : 6
+outer : 7
+Array
+(
+[0] => 1
+[1] => 2
+[2] => 3
+[3] => 4
+[4] => 5
+[5] => 6
+[6] => 7
+[7] => 8
+)
+ */
 
 
 ?>
