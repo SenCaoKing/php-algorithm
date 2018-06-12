@@ -39,14 +39,15 @@ function quickSort($arr){
 			$right_array[] = $arr[$i];
 		}
 	}
-	// 再分别对左边和右边的数组进行相同的排序处理方式递归调用这个函数
+	// 再分别对左边和右边的数组进行相同的排序处理方式
+    // 递归调用这个函数,并记录结果
 	$left_array = quickSort($left_array);
 	$right_array = quickSort($right_array);
-	// 合并
+	// 合并 左边 标尺 右边
 	return array_merge($left_array, array($base_num), $right_array);
 }
 
 $sort = quickSort($arr);
-print_r($sort);
+echo "<pre>";print_r($sort);
 
 ?>
