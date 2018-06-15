@@ -11,6 +11,9 @@
  * @return array         返回排序后的数组
  */
 
+/**
+ * ①
+ */
 $arr = array(1, 43, 54, 62, 21, 66, 32, 78, 36, 76, 39);
 
 function insertSort($arr)
@@ -39,6 +42,42 @@ function insertSort($arr)
 }
 
 $sort = insertSort($arr);
-print_r($sort);
+print_r($sort); // Array ( [0] => 1 [1] => 21 [2] => 32 [3] => 36 [4] => 39 [5] => 43 [6] => 54 [7] => 62 [8] => 66 [9] => 76 [10] => 78 )
+
+echo "<hr>";
+
+function insertionSort($arr, $n)
+{
+    for($i=0; $i<=$n; $i++)
+    {
+        $tmp = $arr[$i];
+        for($j=$i; $j>0 && $arr[$j-1] > $tmp; $j--)
+        {
+            $arr[$j] = $arr[$j-1];
+        }
+        $arr[$j] = $tmp;
+    }
+    return $arr;
+}
+
+$num = count($arr) - 1;
+$d = insertionSort($arr, $num); // 9
+echo "<pre>";print_r($d);
+/**
+ * Array
+(
+[0] => 1
+[1] => 21
+[2] => 32
+[3] => 36
+[4] => 39
+[5] => 43
+[6] => 54
+[7] => 62
+[8] => 66
+[9] => 76
+[10] => 78
+)
+ */
 
 ?>
