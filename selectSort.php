@@ -43,6 +43,6 @@ function selectSort($arr)
 }
 
 $sort = selectSort($arr);
-print_r($sort);
+print_r($sort); // Array ( [0] => 1 [1] => 21 [2] => 32 [3] => 36 [4] => 39 [5] => 43 [6] => 54 [7] => 62 [8] => 66 [9] => 76 [10] => 78 )
 
 ?>
