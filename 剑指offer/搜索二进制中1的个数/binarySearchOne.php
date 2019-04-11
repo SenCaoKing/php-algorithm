@@ -51,6 +51,21 @@ function binarySearch3($n)
     }
     return $count;
 }
+// 相关题目，用一条语句判断一个整数是否为2的整数次方
+function isInteger($n)
+{
+    return (($n - 1) & $n) == 0;
+}
+// 相关题目，判断m要改变多少位才能变成n;
+// 思路：先异或再求异或结果中1的位数
+function countM2n($m, $n)
+{
+    if($m < 0 || $n < 0){
+        return false;
+    }
+    return binarySearch3($m ^ $n);
+}
+
 
 // test
 echo binarySearch1(12); // 2
@@ -60,3 +75,11 @@ echo binarySearch2(-12); // 29
 echo '<br />';
 
 echo binarySearch3(12); // 2
+echo '<br />';
+
+// test 相关题目
+echo isInteger(1024) == true; // 1
+echo '<br />';
+
+echo countM2n(10, 13); // 3
+
